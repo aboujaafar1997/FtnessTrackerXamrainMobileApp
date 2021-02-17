@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="fitnessTraker.Resultat"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="#791AE5"
+      Padding="0,40,0,0"
+    mc:Ignorable="d">
+
+    <Grid>
+
+        <ScrollView>
+            <StackLayout >
+                <StackLayout  Margin="0,0,0,0"  Orientation="Horizontal">
+                    <StackLayout Margin="20,10,20,10" >
+                        <Label
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    Text="Resultat de cette session"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" />
+                  
+                    </StackLayout>
+                </StackLayout>
+                        <yummy:PancakeView
+                        Margin="0,2,0,0"
+                        Padding="30,0,30,30"
+                        BackgroundColor="White"
+                        CornerRadius="40,40,0,0"
+                        VerticalOptions="FillAndExpand">    
+
+                    <StackLayout >
+                        <Grid>
+                            <Label Margin="0,10,0,-50" FontSize="28" x:Name="bravo" Text="" HorizontalOptions="Fill"  FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" />
+                        </Grid>
+                            <Grid>
+                            <Image HorizontalOptions="Center" VerticalOptions="Center"  Source="cup" />
+                        </Grid>
+                        <Grid>
+                            <Grid BackgroundColor="White">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50" />
+                                    <RowDefinition Height="50" />
+                                    <RowDefinition Height="50" />
+                                    <RowDefinition Height="50" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition  Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="Temps écouler :" HorizontalOptions="Fill"  Grid.Column="0"  Grid.Row="0" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="{Binding Temps}"  HorizontalOptions="Fill"  Grid.Column="1"  Grid.Row="0"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent" x:Name="labeltimer" HorizontalTextAlignment="Center" Margin="0,10,10,0"/>
+                                <Label Text="Nombre des pas :" HorizontalOptions="Fill"  Grid.Column="0" Grid.Row="1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="{Binding Pas} "  HorizontalOptions="Fill"  Grid.Column="1" x:Name="pas" Grid.Row="1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="Distance en (Km) :"  HorizontalOptions="Fill"  Grid.Column="0"  Grid.Row="2" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="{Binding Distance} "  HorizontalOptions="Fill"  Grid.Column="1"  Grid.Row="2" x:Name="distance" FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="Calories perdu  :"  HorizontalOptions="Fill"  Grid.Column="0"  Grid.Row="3"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+                                <Label Text="0" x:Name="klorie"  HorizontalOptions="Fill"  Grid.Column="1"  Grid.Row="3"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="Transparent"  HorizontalTextAlignment="Center" Margin="1"/>
+
+                            </Grid>
+
+                        </Grid>
+                        <yummy:PancakeView
+                    x:Name="frameEnregistre"
+                    BackgroundColor="#791AE5"
+                    BorderThickness="1"
+                    CornerRadius="25"
+                    Elevation="3"
+                    HeightRequest="50"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="150">
+                            <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Enregistrer"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand" >
+
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer x:Name="enregistrer" Tapped="enregitrer_Tapped"></TapGestureRecognizer>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </yummy:PancakeView>
+
+                    </StackLayout>
+                </yummy:PancakeView>
+            </StackLayout>
+        </ScrollView>
+        <ActivityIndicator x:Name="loader" Color="#791AE5"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    </Grid>
+</ContentPage>

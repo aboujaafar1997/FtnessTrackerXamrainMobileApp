@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "UDzvOIhggoPXNECAisvmtrY2Jtl4BHNWfNYUM1WcsEd+7CIm7+VmSYZ1UFO9+IRJa0/auVy6CWNazAidp3Pr/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\abouj\\source\\repos\\fitnessTraker\\fitnessTraker\\fitnessTraker.iOS\\fitnessTraker.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abouj\\.nuget\\packages\\cardsview\\2.4.9\\cardsview.2.4.9.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\expandableview\\1.0.10\\expandableview.1.0.10.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\firebasedatabase.net\\4.0.4\\firebasedatabase.net.4.0.4.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\microcharts.forms\\0.6.1\\microcharts.forms.0.6.1.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\skiasharp\\1.59.1\\skiasharp.1.59.1.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\skiasharp.views\\1.59.1\\skiasharp.views.1.59.1.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\skiasharp.views.forms\\1.59.1\\skiasharp.views.forms.1.59.1.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\system.reactive\\4.0.0\\system.reactive.4.0.0.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\touchview\\4.1.99\\touchview.4.1.99.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\xam.forms.videoplayer\\1.0.8\\xam.forms.videoplayer.1.0.8.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\xamarin.essentials\\1.5.1\\xamarin.essentials.1.5.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\xamarin.forms.maps\\4.4.0.991477\\xamarin.forms.maps.4.4.0.991477.nupkg.sha512",
+    "C:\\Users\\abouj\\.nuget\\packages\\xamarin.forms.pancakeview\\1.3.7\\xamarin.forms.pancakeview.1.3.7.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="fitnessTraker.statistique"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Label Text="Statistique" FontSize="28" Margin="0,20,0,0" HorizontalOptions="Center"/>
+ 
+            <Label Text="Distance (KM)" FontSize="25" Margin="20,20,0,0" HorizontalOptions="Start" TextColor="Purple"/>
+            <forms:ChartView HeightRequest="380" x:Name="mystatistique"/>
+
+            <Label Text="Nembre des Pas" FontSize="25" Margin="20,20,0,0" HorizontalOptions="Start" TextColor="Purple" />
+            <forms:ChartView  HeightRequest="380" x:Name="mystatistique2"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

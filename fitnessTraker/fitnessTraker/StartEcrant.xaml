@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fitnessTraker.StartEcrant"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#791AE5"
+             >
+<ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="Appicon" x:Name="img" HeightRequest="150" WidthRequest="150"  VerticalOptions="Center"/>
+            <Label HorizontalOptions="End" Padding="0,0,0,30" TextColor="White" VerticalOptions="Center" FontSize="20" Text="Powred By Othmane Aboujaafar"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

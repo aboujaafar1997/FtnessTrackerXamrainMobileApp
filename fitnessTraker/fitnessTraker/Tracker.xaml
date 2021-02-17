@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:renderers="clr-namespace:fitnessTraker.Renderers"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    Padding="0,40,0,0"
+    mc:Ignorable="d"
+    x:Class="fitnessTraker.Tracker"
+    xmlns:mymap="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Statistique"  HorizontalOptions="Fill"  Grid.Column="1" Grid.Row="2" FontSize="Large" FontAttributes="Bold" BackgroundColor="White"  HorizontalTextAlignment="Center" Margin="0,0,10,0"/>
+            <Grid>
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition  Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Temps écouler :" HorizontalOptions="Fill"  Grid.Column="0"  Grid.Row="0" FontSize="Medium" FontAttributes="Bold" BackgroundColor="White"  HorizontalTextAlignment="Center" Margin="1"/>
+                    <Label Text="{Binding Temps}"  HorizontalOptions="Fill"  Grid.Column="1"  Grid.Row="0"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="White" x:Name="labeltimer" HorizontalTextAlignment="Center" Margin="0,10,10,0"/>
+                    <Label Text="Nombre des pas" HorizontalOptions="Fill"  Grid.Column="0" Grid.Row="1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="White"  HorizontalTextAlignment="Center" Margin="1"/>
+                    <Label Text="{Binding Pas}"  HorizontalOptions="Fill"  Grid.Column="1" x:Name="pas" Grid.Row="1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="White"  HorizontalTextAlignment="Center" Margin="1"/>
+                    <Label Text="Distance (Km)"  HorizontalOptions="Fill"  Grid.Column="0"  Grid.Row="2" FontSize="Medium" FontAttributes="Bold" BackgroundColor="White"  HorizontalTextAlignment="Center" Margin="1"/>
+                    <Label Text="{Binding Distance}"  HorizontalOptions="Fill"  Grid.Column="1"  Grid.Row="2" x:Name="distance" FontSize="Medium" FontAttributes="Bold" BackgroundColor="White"  HorizontalTextAlignment="Center" Margin="1"/>
+
+                </Grid>
+
+            </Grid>
+            <mymap:Map IsShowingUser="True" x:Name="mylocalmap" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <yummy:PancakeView
+                    BackgroundColor="#791AE5"
+                    BorderThickness="1"
+                    CornerRadius="25"
+                    Elevation="3"
+                    HeightRequest="50"
+                    Margin="0,10,0,10"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="150">
+                <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Finir"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand" >
+
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="fini" Tapped="fini_Tapped" ></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </yummy:PancakeView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="fitnessTraker.Inscrir"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:renderers="clr-namespace:fitnessTraker.Renderers"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="#791AE5"
+      Padding="0,40,0,0"
+    mc:Ignorable="d">
+    
+    <Grid>
+
+        <ScrollView>
+            <StackLayout >
+                <StackLayout  Margin="0,0,0,0"  Orientation="Horizontal">
+                    <StackLayout Margin="20,10,20,0" Spacing="20">
+                    <Label
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    Text="Créer votre compte"
+                    TextColor="White"
+                    VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <Image Source="bgImage1" WidthRequest="200" />
+            </StackLayout>
+            <yummy:PancakeView
+            Margin="0,20,0,0"
+            Padding="30,50,30,30"
+            BackgroundColor="White"
+            CornerRadius="40,40,0,0"
+            VerticalOptions="FillAndExpand">
+                <StackLayout Spacing="30">
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Nom complete "
+                        TextColor="#99A1B3" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="50">
+                            <renderers:BorderlessEntry
+                            x:Name="nom"
+                            FontSize="20"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Email"
+                            TextColor="#484848" />
+                        </yummy:PancakeView>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Email"
+                        TextColor="#99A1B3" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="50">
+                            <renderers:BorderlessEntry
+                            x:Name="email"
+                            FontSize="20"
+                            Text=""
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Email"
+                            TextColor="#484848" />
+                        </yummy:PancakeView>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Mot de passe"
+                        TextColor="#99A1B3" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="50">
+                            <renderers:BorderlessEntry
+                            x:Name="password" 
+                             Text=""
+                            FontSize="25"
+                            ClearButtonVisibility="WhileEditing"
+                            IsPassword="True"
+                            TextColor="#484848" />
+                        </yummy:PancakeView>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Répéter le mot de passe"
+                        TextColor="#99A1B3" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="50">
+                            <renderers:BorderlessEntry
+                            x:Name="rpassword"
+                            FontSize="25"
+                            Text=""
+                            ClearButtonVisibility="WhileEditing"
+                            IsPassword="True"
+                            TextColor="#484848" />
+                        </yummy:PancakeView>
+                    </StackLayout>
+                    <StackLayout Spacing="20">
+                        <Label
+                        Margin="20,0,0,0"
+                        FontSize="20"
+                        Text="Sex"
+                        TextColor="#99A1B3" />
+                        <yummy:PancakeView
+                        Padding="10,0,0,0"
+                        BackgroundColor="White"
+                        BorderThickness="1"
+                        CornerRadius="15"
+                        Elevation="3"
+                        HeightRequest="50">
+                                <Picker   x:Name="sex" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+                                    <Picker.Items>
+                                    <x:String>Male</x:String>
+                                    <x:String>Female</x:String>
+                                </Picker.Items>
+                            </Picker>
+
+                        </yummy:PancakeView>
+                    </StackLayout>
+                        
+                        <yummy:PancakeView
+                    BackgroundColor="#791AE5"
+                    BorderThickness="1"
+                    CornerRadius="25"
+                    Elevation="3"
+                    HeightRequest="50"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="150">
+                            <Label
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Inscrir"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand" >
+                            
+                            <Label.GestureRecognizers>
+                                
+                                <TapGestureRecognizer Tapped="InscrirTap" ></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </yummy:PancakeView>
+
+                        <Label
+                        FontAttributes="None"
+                        FontSize="18"
+                        HorizontalOptions="CenterAndExpand"
+                        TextColor="#99A1B3"
+                        VerticalOptions="CenterAndExpand" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Déja vous êtes inscrir? " ></Span>
+                                    <Span TextColor="#791AE5" Text="S'identifier" ></Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+            </yummy:PancakeView>
+        </StackLayout>
+    </ScrollView>
+        <ActivityIndicator x:Name="loader" Color="#791AE5"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    </Grid>
+</ContentPage>

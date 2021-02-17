@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="fitnessTraker.Historique"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    BackgroundColor="#791AE5"
+      Padding="0,40,0,0"
+    mc:Ignorable="d"
+    >
+
+    <Grid>
+
+        <ScrollView>
+            <StackLayout >
+                <Label Text="Historique"  HorizontalTextAlignment="Center"  TextColor="White" FontSize="Large"></Label>
+                <ListView ItemSelected="ListViewSession_ItemSelected" HasUnevenRows="True" Margin="0,20,0,0" x:Name="ListViewSession" HeightRequest="400"  >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="90"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Aspect="AspectFit"  WidthRequest="800"  Grid.Column="0" Source="cup"></Image>
+                                    <Label Grid.Column="1" FontSize="20" TextColor="White" Text="{Binding adresse}" VerticalOptions="Center"/>
+                                    <Label Grid.Column="2" TextColor="White" Text="{Binding date}"  VerticalOptions="End"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

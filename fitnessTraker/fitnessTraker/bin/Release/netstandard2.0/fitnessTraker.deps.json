@@ -1,0 +1,475 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "fitnessTraker/1.0.0": {
+        "dependencies": {
+          "CardsView": "2.4.9",
+          "ExpandableView": "1.0.10",
+          "FirebaseDatabase.net": "4.0.4",
+          "Microcharts.Forms": "0.6.1",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3",
+          "TouchView": "4.1.99",
+          "Xam.Forms.VideoPlayer": "1.0.8",
+          "Xamarin.Essentials": "1.5.1",
+          "Xamarin.Forms": "4.6.0.1141",
+          "Xamarin.Forms.Maps": "4.4.0.991477",
+          "Xamarin.Forms.PancakeView": "1.3.7"
+        },
+        "runtime": {
+          "fitnessTraker.dll": {}
+        }
+      },
+      "CardsView/2.4.9": {
+        "runtime": {
+          "lib/netstandard2.0/PanCardView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ExpandableView/1.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExpandableView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FirebaseDatabase.net/4.0.4": {
+        "dependencies": {
+          "LiteDB": "4.1.4",
+          "Newtonsoft.Json": "12.0.3",
+          "System.Reactive": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Firebase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LiteDB/4.1.4": {
+        "dependencies": {
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiteDB.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.1.4.0"
+          }
+        }
+      },
+      "Microcharts.Forms/0.6.1": {
+        "dependencies": {
+          "SkiaSharp.Views.Forms": "1.59.1"
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81+wp8/Microcharts.Forms.dll": {
+            "assemblyVersion": "1.0.6429.41035",
+            "fileVersion": "1.0.6429.41035"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "SkiaSharp/1.59.1": {
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.dll": {
+            "assemblyVersion": "1.59.0.0",
+            "fileVersion": "1.59.1.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.59.1": {
+        "dependencies": {
+          "SkiaSharp": "1.59.1",
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
+            "assemblyVersion": "1.59.0.0",
+            "fileVersion": "1.59.1.0"
+          }
+        }
+      },
+      "System.IO/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "System.Reactive/4.0.0": {
+        "dependencies": {
+          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reactive.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.398"
+          }
+        }
+      },
+      "System.Reflection/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.IO": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.Primitives/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Reflection.TypeExtensions/4.3.0": {
+        "dependencies": {
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
+      "System.Text.Encoding/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Threading.Tasks/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "TouchView/4.1.99": {
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/TouchEffect.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xam.Forms.VideoPlayer/1.0.8": {
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Forms.VideoPlayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.5.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms/4.6.0.1141": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.6.0.555"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.6.0.555"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.6.0.555"
+          }
+        }
+      },
+      "Xamarin.Forms.Maps/4.4.0.991477": {
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.4.0.451"
+          }
+        }
+      },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "dependencies": {
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "fitnessTraker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CardsView/2.4.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XjF8Vx/BAlEXQPdFbUMjQFTplVnY1ojl0KMrsqmBuxg1nTPIXHkDRdZCLwZnSK5f7CfqZDrIV7eUk21x9toY3A==",
+      "path": "cardsview/2.4.9",
+      "hashPath": "cardsview.2.4.9.nupkg.sha512"
+    },
+    "ExpandableView/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uzLIepGkNGBKRlsktnHeJowqUznhThVKku/QYjhacX4jytV+8JjpLAWNu/n0FoLa0EOf5Yd8HlUjWTdVMV3wHA==",
+      "path": "expandableview/1.0.10",
+      "hashPath": "expandableview.1.0.10.nupkg.sha512"
+    },
+    "FirebaseDatabase.net/4.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XkdKzFT4rU7x1GEO3v0bGmLT7eXDZ/kHa+77mCHn9LP2KjCEQqt1R5tIctwmlaOEVy66Eb4QxHJ5rjaG8Et1/A==",
+      "path": "firebasedatabase.net/4.0.4",
+      "hashPath": "firebasedatabase.net.4.0.4.nupkg.sha512"
+    },
+    "LiteDB/4.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g4g9JlHzRBZl+Gd2UbiRdszZ7t8wozU2wX7+5xY5uE79tmcgcDhha+ubAP84G1VLbwQmhBGCzRfIx+epLmJciQ==",
+      "path": "litedb/4.1.4",
+      "hashPath": "litedb.4.1.4.nupkg.sha512"
+    },
+    "Microcharts.Forms/0.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lZmOwQ9SWhlNYTq1GCcHJF9yFRxkZeRpsQzUVJLQFlxhXm90NXCpgS7MhEZzwPw1+2+8ZjdoXFyHHsqNO9rEMg==",
+      "path": "microcharts.forms/0.6.1",
+      "hashPath": "microcharts.forms.0.6.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "SkiaSharp/1.59.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Le+YqP0aWwJ5ImHikWiLWOWjdH8oOV6F2D7fknzKp9ArzDIrtPASeiHpI1RgqQEK/GGvR56B2l5belsDzwK7uQ==",
+      "path": "skiasharp/1.59.1",
+      "hashPath": "skiasharp.1.59.1.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Forms/1.59.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oJB/Hgk1TghpMuuXhUZKmQ3rOU/l4RleYsgNd0EvrNmDahdr/PPhJ30rFH0OjdIsuf5T2hrRdAn55zdb7yMg2w==",
+      "path": "skiasharp.views.forms/1.59.1",
+      "hashPath": "skiasharp.views.forms.1.59.1.nupkg.sha512"
+    },
+    "System.IO/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "path": "system.io/4.3.0",
+      "hashPath": "system.io.4.3.0.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Reactive/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yaVAxT2Yl28p9+DupGwj2oPbIOYZUQimOQ+n7N7vML2oofIRj9BmcfD7DHc6FLrNah65EigOgG6U9VnwWEyz5g==",
+      "path": "system.reactive/4.0.0",
+      "hashPath": "system.reactive.4.0.0.nupkg.sha512"
+    },
+    "System.Reflection/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "path": "system.reflection/4.3.0",
+      "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "path": "system.reflection.primitives/4.3.0",
+      "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
+      "path": "system.reflection.typeextensions/4.3.0",
+      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J4GUi3xZQLUBasNwZnjrffN8i5wpHrBtZoLG+OhRyGo/+YunMRWWtwoMDlUAIdmX0uRfpHIBDSV6zyr3yf00TA==",
+      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
+      "hashPath": "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encoding/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "path": "system.text.encoding/4.3.0",
+      "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "path": "system.threading.tasks/4.3.0",
+      "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "TouchView/4.1.99": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QTUim0GCB600YJ/H8pi6rbZb4/lhAEGKlTLSC8crme7KPpGZu5onvvyX1euAC0ggEwHlx2L1zRgcl/sDx5txjA==",
+      "path": "touchview/4.1.99",
+      "hashPath": "touchview.4.1.99.nupkg.sha512"
+    },
+    "Xam.Forms.VideoPlayer/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hd38+Bwj5l8Q+YKLATqrWfdhDNCATbqw2qKav/8++49DgNcLQkz9yxQwH6x/BawArfu2uG6Q1N/XC7FMMSuRBA==",
+      "path": "xam.forms.videoplayer/1.0.8",
+      "hashPath": "xam.forms.videoplayer.1.0.8.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XEKAp7BXfZkTGbMqySXtuhwxb06ULjkJNQ8p44e8amOPm4m4VTVV92F13ov0a8NFNU+6JFm98510QK9Q/HBD5A==",
+      "path": "xamarin.essentials/1.5.1",
+      "hashPath": "xamarin.essentials.1.5.1.nupkg.sha512"
+    },
+    "Xamarin.Forms/4.6.0.1141": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SltuAt48A9qfC7pEo9zdQ5/IExdLkGttVAtv9bZw4IWA1SBbRpR2xbeduvowW9DQ/PjJD9HM7aSzxt0Spkwrkw==",
+      "path": "xamarin.forms/4.6.0.1141",
+      "hashPath": "xamarin.forms.4.6.0.1141.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/4.4.0.991477": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uPOq1ncGc0S6zNI87kiQZiREW1ej/h6UNEMJuQWDOAuKjdgAVW2dtFZO77bG1hGGOmZetjBLD6mBQ70TGpV9Lw==",
+      "path": "xamarin.forms.maps/4.4.0.991477",
+      "hashPath": "xamarin.forms.maps.4.4.0.991477.nupkg.sha512"
+    },
+    "Xamarin.Forms.PancakeView/1.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b6g3lVHV764yU4BRPzb1bvHT4G9xSQAXIPGtWQvryzLgU2qoqvnboiL5caJfLLFYXPtDy5ptoRD/TzC5i3VF3w==",
+      "path": "xamarin.forms.pancakeview/1.3.7",
+      "hashPath": "xamarin.forms.pancakeview.1.3.7.nupkg.sha512"
+    }
+  }
+}
